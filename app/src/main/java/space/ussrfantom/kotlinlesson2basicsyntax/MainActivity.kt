@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         variables()
         nullableTypes()
+        conditionalIfOperator()
     }
     //Переменные
     fun variables(){
@@ -26,6 +27,40 @@ class MainActivity : AppCompatActivity() {
         val types2 = types?.length?:0  //проверяем если переменная не имеет значения присваиваем ей 0, если не то присваиваем необходимое число
 
     }
+    //условный оператор if
+    fun conditionalIfOperator (){
+        val a = 50
+        //различий нет
+        if(a < 40){
+            Log.i("------->>>>>>проверка!", a.toString())
+        }else{
+            Log.i("------->>>>>>проверка!", a.toString())
+        }
+
+        val food:String
+        val count = 400
+        //Разница
+        food = if (count > 500){
+            "Пицца"
+        }else if (count > 300){
+            "шаурма"
+        }else {
+            "доширак"
+        }
+        Log.i("Сегодня мы сьедим", food)
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
