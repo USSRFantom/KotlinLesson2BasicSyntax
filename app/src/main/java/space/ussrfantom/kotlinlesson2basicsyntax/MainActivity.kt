@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         variables()
     }
-
+    //Переменные
     fun variables(){
         val name = "Семен"  //переменная без типа, тип определяется автоматически
         var name2 = "Астап"  //константаБ переменная с неизменяемым значением как final  в java
