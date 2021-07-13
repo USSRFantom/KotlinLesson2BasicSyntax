@@ -51,6 +51,32 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+    //when
+    fun methodWhen (){
+        val a = "Сентябрь"
+        val season : String
+        when(a){
+            "Октябрь", "Ноябрь", "Декабрь" ->{
+               season =  "Осень"
+            }
+            "Январь", "Февраль", "Март" ->{
+               season = "Зима"
+            }
+            "Апрель", "Май", "Июнь" ->{
+               season =  "Весна"
+            }
+            "Июль", "Август", "Сентябрь" ->{
+                season = "Лето"
+            }
+            else -> {
+                season = "Ошибка"
+            }
+        }
+    }
+
+
+
+
 
 
 
